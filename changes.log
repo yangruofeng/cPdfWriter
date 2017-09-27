@@ -1,0 +1,27 @@
+version 0.2.2
+=======
+- fixed incorrect usage of underlined text
+
+version 0.2.1
+=======
+- fixed bug when calling BufferedGDImage from the Image method (thanks to Jose Gandullia)
+- fixed incorrect version in PDF_PRODUCER constant
+
+version 0.2
+=======
+- fixed a few bugs concerning SetDrawColor and optimized a few generic things
+- changed SetFontAngle to TextAngle
+- changed PutText to Text
+- fixed a bug in the BufferedGDImage method concerning the loading of GIF images
+- fixed BufferedGDImage to remove transparency of GIF images
+- fixed BufferedGDImage to make transparent areas white instead of black
+- corrected a bug in _putpages method
+- corrected a bug in the SetFont method that did not propagate the font settings correctly
+- corrected a bug in the SetFont method that erased font styles
+- corrected a bug in the Write method that made the text be uncorrectly placed
+- make Write method accept the line height parameter as optional
+
+version 0.1
+=======
+- first completely functional release
+

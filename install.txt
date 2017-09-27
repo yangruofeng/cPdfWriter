@@ -1,0 +1,23 @@
+Installation instructions:
+
+There are two ways of using this package:
+
+1. You can simply copy it in the directory of your script and include it: require_once('cPdfWriter/cPdfWriter.php');
+   However this way you is not recommended since you have to copy the package for every script that uses it. 
+    
+2. (Recommended) However if you want this package installed in a generic way, for example if you have manyer 
+   scripts that would use it, then you must put the cPdfWriter package somewhere in your PHP include path.
+
+I recommend uncommenting and setting the include_path in your php.ini file as follows 
+(you can change /usr/lib/php to whatever you want):
+
+    include_path = ".:/php/includes:/usr/share/pear:/usr/lib/php"
+
+copy the cPdfWriter directory in /usr/lib/php and then restart the Apache server
+
+    /etc/init.d/httpd restart
+
+and you're set. To use the cPdfWriter class just do
+
+    require_once('cPdfWriter/cPdfWriter.php');
+
